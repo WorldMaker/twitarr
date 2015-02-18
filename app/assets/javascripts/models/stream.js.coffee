@@ -27,13 +27,13 @@ Twitarr.StreamPost = Ember.Object.extend
     return '' unless likes and likes.length > 0
     if likes.length == 1
       if likes[0] == 'You'
-        return 'You like this.'
+        return 'You meow at this.'
       if likes[0].indexOf('seamonkeys') > -1
-        return "#{likes[0]} like this."
+        return "#{likes[0]} meow at this."
       else
-        return "#{likes[0]} likes this."
+        return "#{likes[0]} meow at this."
     last = likes.pop()
-    likes.join(', ') + " and #{last} like this."
+    likes.join(', ') + " and #{last} meow at this."
   ).property('likes')
 
   like: ->
